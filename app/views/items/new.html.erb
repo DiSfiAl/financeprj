@@ -1,0 +1,9 @@
+<main class="info-window"  >
+  <h1>New item</h1>
+  <%= render "form", item: @item, class: " w-100" %>
+  <br>
+  <div>
+    <%= link_to "Back to items",items_path, class: "link-success" %>
+  </div>
+</main>
+

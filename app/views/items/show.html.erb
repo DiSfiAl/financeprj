@@ -1,0 +1,26 @@
+<div class="table-responsive">
+  <table class="table table-striped table-sm">
+    <thead>
+      <tr class="text-dark">
+        <th scope="col">Name</th>
+        <th scope="col">Price</th>
+        <th scope="col">Created at</th>
+        <th scope="col">Updated at</th>
+      </tr>
+    </thead>
+    <tbody id='items' class="text-dark">
+      <tr>
+      <%= render @item %>
+      </tr>
+    </tbody>
+  </table>
+</div>
+<div>
+  <%= button_to "Delete",  @item, method: :delete, class: "btn btn-danger me-2" %>
+  <%= link_to edit_item_path(@item) do  %>
+    <button type="button" class="btn btn-warning ">Edit this item</button>
+  <% end %>
+  <%= link_to  items_path do %>
+    <button type="button" class="btn btn-secondary ">Back to items</button>
+  <% end %>
+</div>

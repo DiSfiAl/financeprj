@@ -1,0 +1,25 @@
+
+body,html,main{
+    background-color: #f9f9f9;
+    color: Black;
+}
+
+main{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.info-window
+{
+    width:300px; 
+    text-align: center; 
+    margin: auto;
+}
+
+
+.sidebar
+{
+    min-height: 100%;
+    width: 4.5rem;
+}

@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Proj</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <%= csrf_meta_tags %>
+    <%= csp_meta_tag %>
+    <%= stylesheet_link_tag "application", "data-turbo-track": "reload" %>
+    <%= stylesheet_link_tag "items", "data-turbo-track": "reload" %>
+    <%= javascript_include_tag "http://www.google.com/jsapi", "chartkick" %>
+    <%= javascript_include_tag "https://www.gstatic.com/charts/loader.js" %>
+    <%= javascript_include_tag 'application', defer: true %>
+  </head>
+
+  <body>
+    <%= render 'layouts/sidebar'%>
+    <%= render 'layouts/flash_notifications'%>
+    <%= yield %>
+    <%= render 'layouts/footer'%>
+  </body>
+</html>
